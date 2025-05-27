@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->setFrom('survivalperry@gmail.com', 'Blossom Services');
+            $mail->setFrom('', 'Blossom Services');
             $mail->addAddress($email, $name);
             $mail->isHTML(true);
             $mail->Subject = 'Booking Confirmation - Blossom Services';
